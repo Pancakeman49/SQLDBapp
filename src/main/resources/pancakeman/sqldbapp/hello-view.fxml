@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pancakeman.sqldbapp.HelloController">
+   <children>
+      <ListView fx:id="listOfTables" prefWidth="200.0" style="-fx-border-color:gray; -fx-border-width: 2; -fx-border-style: solid hidden solid solid;" HBox.hgrow="NEVER" />
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:gray; -fx-border-width: 2; -fx-border-style: solid;" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="SOMETIMES">
+      </TabPane>
+      <Pane fx:id="controlPane" prefWidth="200.0" style="-fx-border-color:gray; -fx-border-width: 2; -fx-border-style: solid solid solid hidden;" HBox.hgrow="NEVER">
+         <children>
+            <Label fx:id="sqlLabel" layoutX="89.0" layoutY="14.0" text="SQL" />
+            <TextField fx:id="sqlQuery" layoutX="26.0" layoutY="31.0" />
+            <Button fx:id="sqlButton" layoutX="74.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#SQLButtonClick" text="Execute" />
+            <Button fx:id="getTablesBtn" alignment="TOP_CENTER" layoutX="66.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#GetTablesBtnClick" text="Get Tables" />
+         </children></Pane>
+   </children>
+</HBox>
